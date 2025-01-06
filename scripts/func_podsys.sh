@@ -39,7 +39,7 @@ delete_logs() {
     if [ ! -d "workspace/log" ]; then
         mkdir -p "workspace/log"
     fi
-    logs=("workspace/log/dnsmasq.log" "workspace/log/access.log" "workspace/log/error.log" "workspace/log/other_vhosts_access.log" "workspace/log/conf_ip.log")
+    logs=("workspace/log/dnsmasq.log" "workspace/log/conf_ip.log")
 
     for log in "${logs[@]}"; do
         if [ -f "$log" ]; then
